@@ -6,7 +6,7 @@ json_open = open('data.json', 'r')
 json_load = json.load(json_open)
 
 # DynamoDB接続
-table_name = 'test_quests'
+table_name = 'questions'
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table(table_name)
 
