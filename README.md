@@ -52,7 +52,9 @@ $ python putdata.py data.json
 
 (4) Lambdaスクリプトを更新します。
 
-- 手順(1)で作成したオウム返しLINE BotのLambdaスクリプトを`Lambda_function.py`に上書きします。
-- また、環境変数 `S3PATH` を追加し、手順(3)のS3バケット名を値として設定します。
+- 以下3つの設定をします
+  - 手順(1)で作成したオウム返しLINE BotのLambdaスクリプトを`Lambda_function.py`に上書きします
+  - 環境変数 `S3PATH` を追加し、手順(3)のS3バケット名を値として設定します
+  - アクセス権(IAM Role)にポリシー `AmazonDynamoDBFullAccess` を追加します
 
 手順(4)の後、LINE BotでAWS暗記カードが動くと成功です。
